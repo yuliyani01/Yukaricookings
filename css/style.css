@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Kreon;
 }
@@ -9,7 +20,7 @@ header {
 
 .nav-list {
   color: #FF4D00;
-  
+  float: right;
 }
 
 .nav-list ul {
@@ -17,6 +28,18 @@ header {
   display: flex;
   justify-content: right;
   gap: 2rem 1rem;
+}
+
+header.navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    
+  padding-block: 1rem;
+  z-index: 999;
 }
 
 header.navbar-container .nav-list li{
@@ -34,9 +57,52 @@ h1 {
   font-family: 'Kalam', cursive;
 }
 
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    
+    align-items: center;
+}
+
+.content {
+  padding: 2rem 4rem;
+  flex: 1;
+  gap : 2rem;
+  display: flex;
+}
+
 .opening {
   font-family: Kalam;
   font-weight: 300;
+}
+
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+main .content .carousel {
+  flex: 1 1;
+  margin-block: 1rem;
+}
+
+.resep {
+  flex: 1;
+  gap : 2rem;
+  display: flex;
+  padding-top: 2rem;
+}
+
+.resep-atas-kanan img {
+  height: 281px;
+  width: 281px;
+  padding-bottom: 1rem;
+}
+
+.resep .koki-resep img {
+  float:inline-end
 }
 
 h4 {
@@ -45,7 +111,21 @@ h4 {
   border: #FF4D00;
   background-color: #FF4D00;
   color: white;
+  width: 10%;
   padding: .5rem;
+}
+
+.main-list {
+  font-weight: 700;
+  padding-block: 1rem;
+}
+
+.list-bahan {
+  padding-left: 1rem;
+}
+
+.resep-bawah {
+  padding-bottom: 2rem;
 }
 
 .judul {
@@ -53,19 +133,45 @@ h4 {
   font-weight: 700;
   line-height: 2rem;
   font-size: 32px;
+  padding-bottom: 1rem;
 }
 
 p {
   font-size: 16px;
 }
 
+.rekomendasi {
+  font-family: Kreon;
+  font-size: 20px;
+  font-weight: 700;
+  border: #FF4D00;
+  background-color: #FF4D00;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+}
 
+.sub-rekomen {
+  font-size: 20px;
+  font-weight: 700;
+  color: #FF4D00;
+}
+
+.value-rekomen {
+  list-style-type: none;
+}
+
+.resep .value-rekomen li a {
+  text-decoration: none;
+  color: black;
+}
 
 footer {
   background-color: #FF4D00;
   padding-top: 5rem;
   justify-self: center;
   color: white;
+  margin-top: 2rem;
 }
 
 
