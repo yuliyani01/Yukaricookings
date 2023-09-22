@@ -1,0 +1,72 @@
+body {
+  font-family: Kreon;
+}
+
+header {
+  font-family: Kreon;
+  font-weight: 400;
+}
+
+.nav-list {
+  color: #FF4D00;
+  
+}
+
+.nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: right;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li{
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  color: #FF4D00;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'Kalam', cursive;
+}
+
+.opening {
+  font-family: Kalam;
+  font-weight: 300;
+}
+
+h4 {
+  font-family: Kalam;
+  font-weight: 400;
+  border: #FF4D00;
+  background-color: #FF4D00;
+  color: white;
+  padding: .5rem;
+}
+
+.judul {
+  font-family: Kalam;
+  font-weight: 700;
+  line-height: 2rem;
+  font-size: 32px;
+}
+
+p {
+  font-size: 16px;
+}
+
+
+
+footer {
+  background-color: #FF4D00;
+  padding-top: 5rem;
+  justify-self: center;
+  color: white;
+}
+
+
+

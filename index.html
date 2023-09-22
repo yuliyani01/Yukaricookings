@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yukaricokings</title>
     
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Quicksand:wght@500;700&family=Sahitya:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="navbar-container">
@@ -35,7 +39,7 @@
         <div class="content-image">
             <h1>Berbagai Resep Makanan Khas Daerah</h1>
             <img src="img/coki.png" alt="Gambar Cooki">
-            <p>Selamat datang di blog saya yang merupakan kumpulan resep makanan khas daerah yang kamu disukai.</p>
+            <p class="opening">Selamat datang di blog saya yang merupakan kumpulan resep makanan khas daerah yang kamu disukai.</p>
         </div>      
 
       </div>
@@ -45,117 +49,131 @@
       <article>
         <h4>Khas Sunda</h4>
         <img src="img/nasi liwet.jpg" alt="nasi liwet">
-        <p>Resep Nasi Liwet Magic Com Anti Gagal</p>
-        <p>Bahan-bahan : <br>
-            Beras 4 cup <br>
-            Teri nasi atau teri Medan 1 genggang, goreng kering <br>
-            Baby cumi asin 1 genggang, cuci bersih (jika perlu rendam dengan air panas), bilas lalu goreng <br>
-            Cabai rawit utuh 10 buah <br>
-            Bawang merah utuh 10 buah <br>
-            Pete 2 papan, kupas <br>
-            Sereh 2 batang, geprek <br>
-            Daun salam 2 lembar <br>
-            Daun jeruk 3 lembar, buang tulangnya<br>
-            Garam 1 sendok teh (saya pakai 1/2 sendok teh garam dan diberi kaldu bubuk secukupnya biar makin gurih)</p>
-        <p> Bumbu Iris Nasi Liwet <br>
-            Cabai merah keriting 3 buah <br>
-            Bawang merah 4 siung <br>
-            Bawang putih 2 siung <br>
-            Langkah-langkah <br>
-            Cuci bersih beras, beri air secukupnya layaknya memasak nasi biasa di rice cooker. <br>
-            Selanjutnya tumis bumbu iris hingga harum, masukkan sereh, daun jeruk, dan daun salam, tumis hingga tercium aroma wangi sedap. Angkat lalu tiriskan. <br>
-            Masukkan tumisan bumbu ke dalam wadah beras. Jangan lupa beri garam, aduk rata lalu pencet tombol cook/memasak pada rice cooker / magic com hingga matang. <br>
-            Selanjutnya goreng pete, bawang utuh dan cabai rawit utuh hingga layu, angkat, sisihkan. <br>
-            Setelah nasi matang dan tanak, masukkan teri, cabai rawit, pete, bawang dan baby cumi. Aduk rata dengan nasi. <br>
-            Nasi liwet sunda siap disajikan bersama sambal pedas dan pelengkap pilihan sesuai selera.</p>
+        <p class="judul">Resep Nasi Liwet Magic Com Anti Gagal</p>
+        
+          <p>Bahan-bahan : </p>
+          <ul class="list-bahan">
+          <li>Beras 4 cup </li>
+          <li>Teri nasi atau teri Medan 1 genggang, goreng kering </li>
+          <li>Baby cumi asin 1 genggang, cuci bersih (jika perlu rendam dengan air panas), bilas lalu goreng </li>
+          <li>Cabai rawit utuh 10 buah </li>
+          <li>Bawang merah utuh 10 buah </li>
+          <li>Pete 2 papan, kupas </li>
+          <li>Sereh 2 batang, geprek </li>
+          <li>Daun salam 2 lembar </li>
+          <li>Daun jeruk 3 lembar, buang tulangnya</li>
+          <li>Garam 1 sendok teh (saya pakai 1/2 sendok teh garam dan diberi kaldu bubuk secukupnya biar makin gurih)</li>
+          </ul>
+      <p> Bumbu Iris Nasi Liwet </p>
+      <ul class="list-bahan">
+      <li>Cabai merah keriting 3 buah </li>
+      <li>Bawang merah 4 siung </li>
+      <li>Bawang putih 2 siung </li>
+      <li>Langkah-langkah </li>
+      <li>Cuci bersih beras, beri air secukupnya layaknya memasak nasi biasa di rice cooker. </li>
+      <li>Selanjutnya tumis bumbu iris hingga harum, masukkan sereh, daun jeruk, dan daun salam, tumis hingga tercium aroma wangi sedap. Angkat lalu tiriskan. </li>
+      <li>Masukkan tumisan bumbu ke dalam wadah beras. Jangan lupa beri garam, aduk rata lalu pencet tombol cook/memasak pada rice cooker / magic com hingga matang. </li>
+      <li>Selanjutnya goreng pete, bawang utuh dan cabai rawit utuh hingga layu, angkat, sisihkan. </li>
+      <li>Setelah nasi matang dan tanak, masukkan teri, cabai rawit, pete, bawang dan baby cumi. Aduk rata dengan nasi. </li>
+      <li>Nasi liwet sunda siap disajikan bersama sambal pedas dan pelengkap pilihan sesuai selera.</p>
+        </ul>
+           
       </article>
 
       <article>
         <h4>Khas Jawa</h4>
         <img src="img/rawon.jpg" alt="Rawon">
-        <p>Resep Rawon Daging Sapi Khas Jawa Timur Spesial Enak Empuk</p>
-        <p>Bahan-bahan <br>
-            Daging sapi has dalam 500 gram, bisa juga diganti daging rawonan atau tetelan <br>
-            Air untuk kuah 1,5 liter atau bisa sesuai selera <br>
-            Lengkuas 1 ruas, geprek <br>
-            Serai 1 batang ukuran besar dan 2 batang jika pakai uk kecil, memarkan <br>
-            Daun jeruk angka 8, 3 lembar <br>
-            Garam secukupnya <br>
-            Gula pasir sejumput saja</p>
-        <p>
-            Penyedap jamur secukupnya <br>
-Daun bawang iris secukupnya <br>
-Minyak untuk menumis secukupnya <br>
-Bumbu Halus Rawon <br> 
-Bawang putih besar 3 siung <br>
-Bawang merah besar 5 siung <br>
-Cabai merah 2 buah <br>
-Kemiri sangrai 2 butir <br>
-Ketumbar bubuk 1/2 sdt <br>
-Merica bubuk 1/2 sdt <br>
-Kunyit 1 ruas<br>
-Jahe 1 ruas<br>
-Kencur 1 cm<br>
-Jintan 1/4 sdt, jika tidak terlalu suka boleh pakai sepucuk sdt<br>
-Kluwek 3-4 buah, ambil isinya lalu rendam air panas<br>
-Bahan Pelengkap Rawon<br>
-Bawang goreng<br>
-Sambal terasi<br>
-Tauge rebus<br>
-Kerupuk udang<br>
-Jeruk nipis jika suka<br>
-Tempe goreng<br>
-Telur asin<br>
-        </p>
+        <p class="judul">Resep Rawon Daging Sapi Khas Jawa Timur Spesial Enak Empuk</p>
+        <p>Bahan-bahan </p>
+        <ul class="list-bahan">
+        <li>Daging sapi has dalam 500 gram, bisa juga diganti daging rawonan atau tetelan </li>
+        <li>Air untuk kuah 1,5 liter atau bisa sesuai selera </li>
+        <li>Lengkuas 1 ruas, geprek </li>
+        <li>Serai 1 batang ukuran besar dan 2 batang jika pakai uk kecil, memarkan </li>
+        <li>Daun jeruk angka 8, 3 lembar </li>
+        <li>Garam secukupnya </li>
+        <li>Gula pasir sejumput saja</li>
+        </ul>
+
+        <p>Penyedap jamur secukupnya </p>
+        <ul class="list-bahan">
+        <li>Daun bawang iris secukupnya </li>
+        <li>Minyak untuk menumis secukupnya </li>
+        <li>Bumbu Halus Rawon </li> 
+        <li>Bawang putih besar 3 siung </li>
+        <li>Bawang merah besar 5 siung </li>
+        <li>Cabai merah 2 buah </li>
+        <li>Kemiri sangrai 2 butir </li>
+        <li>Ketumbar bubuk 1/2 sdt </li>
+        <li>Merica bubuk 1/2 sdt </li>
+        <li>Kunyit 1 ruas</li>
+        <li>Jahe 1 ruas</li>
+        <li>Kencur 1 cm</li>
+        <li>Jintan 1/4 sdt, jika tidak terlalu suka boleh pakai sepucuk sdt</li>
+        <li>Kluwek 3-4 buah, ambil isinya lalu rendam air panas</li>
+        <p>Bahan Pelengkap Rawon</p>
+        <li>Bawang goreng</li>
+        <li>Sambal terasi</li>
+        <li>Tauge rebus</li>
+        <li>Kerupuk udang</li>
+        <li>Jeruk nipis jika suka</li>
+        <li>Tempe goreng</li>
+        <li>Telur asin</li>
+        </ul>
+        
         <img src="img/coki.png" alt="gambar koki">
-        <p>Langkah-langkah<br>
-            Cuci daging, rebus dengan air secukupnya hingga setengah empuk lalu potong-potong dadu, sisakan 1,5 liter atau sesuai selera air kaldu bekas rebusan daging yang digunakan untuk kuah.<br>
-            Selanjutnya tumis bumbu halus hingga benar-benar tanak dulu baru masukkan lengkuas, serai, dan daun jeruk hingga harum. Masukkan daging yang sudah dipotong-potong lalu tambahkan air kaldu secukupnya.<br>
-            Beri garam, gula, dan penyedap jamur, aduk rata lalu masak daging beberapa saat dalam wajan agar bumbu lebih meresap.<br>
-            Pindahkan daging ke dalam panci yang berisi air kaldu bekas rebusan daging (jika kuah kurang maka tambahkan air), masak kembali hingga daging benar-benar empuk. Cicipi rasanya lalu tambahkan bumbu lain jika di rasa ada yang kurang.<br>
-            Masukkan daun bawang merah iris, aduk rata, matikan apinya.<br>
-            Sajikan rawon selagi hangat bersama nasi putih lengkap dengan bahan pelengkapnya. Endeus!</p>
+        <p>Langkah-langkah</p>
+        <ul class="list-bahan">
+        <li>Cuci daging, rebus dengan air secukupnya hingga setengah empuk lalu potong-potong dadu, sisakan 1,5 liter atau sesuai selera air kaldu bekas rebusan daging yang digunakan untuk kuah.</li>
+        <li>Selanjutnya tumis bumbu halus hingga benar-benar tanak dulu baru masukkan lengkuas, serai, dan daun jeruk hingga harum. Masukkan daging yang sudah dipotong-potong lalu tambahkan air kaldu secukupnya.</li>
+        <li>Beri garam, gula, dan penyedap jamur, aduk rata lalu masak daging beberapa saat dalam wajan agar bumbu lebih meresap.</li>
+        <li>Pindahkan daging ke dalam panci yang berisi air kaldu bekas rebusan daging (jika kuah kurang maka tambahkan air), masak kembali hingga daging benar-benar empuk. Cicipi rasanya lalu tambahkan bumbu lain jika di rasa ada yang kurang.</li>
+        <li>Masukkan daun bawang merah iris, aduk rata, matikan apinya.</li>
+        <li>Sajikan rawon selagi hangat bersama nasi putih lengkap dengan bahan pelengkapnya. Endeus!</li>
+        </ul>
       </article>
 
       <article>
         <h4>Khas Aceh</h4>
         <img src="img/mi aceh.jpg" alt="Mi Aceh">
-        <p>Resep Mie Aceh Goreng, Sang Juara dari Ujung Sumatra</p>
-        <p>Bahan utama<br>
-            200 g mie kuning basah<br>
-            75 g daging sapi tenderloin, potong dadu<br>
-            4 siung bawang putih, iris tipis<br>
-            3 butir bawang merah, iris tipis<br>
-            1 buah tomat, potong kasar<br>
-            200 ml air<br>
-            3 sdtRoyco Kaldu Sapi<br>
-            50 g taoge<br>
-            2 sdmBango Kecap Manis<br></p>
-        <p> 10 bawang merah<br>
-            6 bawang putih<br>
-            3 batang serai<br>
-            10 cabe rawit merah<br>
-            4 jari kencur (aku suka kencur soalnya)<br>
-            3 ruas lengkuas<br>
-            3 ruas jahe<br>
-            secukupnya Garam, gula Langkah-langkah<br>
-            Ayam yang sudah dibersihkan, bakar sebentar saja<br>
-            Langkah 2<br>
-            Tumis bumbu halus sampai harum lalu masukkan bumbu rajangan halus.. masukkan ayam aduk2 lalu beri air matang sampai menutupi ayam
-            Langkah 3<br>
-            Masak sampai matang lalu beri gula dan garam, bila rasa sudah pas sajikan dengan nasi panas, plecing kangkung,</p>
+        <p class="judul">Resep Mie Aceh Goreng, Sang Juara dari Ujung Sumatra</p>
+        <p>Bahan utama</p>
+        <ul class="list-bahan">
+          <li>200 g mie kuning basah</li>
+          <li>75 g daging sapi tenderloin, potong dadu</li>
+          <li> 4 siung bawang putih, iris tipis</li>
+          <li>3 butir bawang merah, iris tipis</li>
+          <li>1 buah tomat, potong kasar</li>
+          <li>200 ml air</li>
+          <li>3 sdtRoyco Kaldu Sapi</li>
+          <li>50 g taoge</li>
+          <li>2 sdmBango Kecap Manis</li>
+          </ul>
+        <p> 10 bawang merah</p>
+        <ul class="list-bahan">
+        <li>6 bawang putih</li>
+        <li>3 batang serai</li>
+        <li>10 cabe rawit merah</li>
+        <li>4 jari kencur (aku suka kencur soalnya)</li>
+        <li>3 ruas lengkuas</li>
+        <li>3 ruas jahe</li>
+        <li>secukupnya Garam, gula Langkah-langkah</li>
+        <li>Ayam yang sudah dibersihkan, bakar sebentar saja</li>
+        <li>Tumis bumbu halus sampai harum lalu masukkan bumbu rajangan halus.. masukkan ayam aduk2 lalu beri air matang sampai menutupi ayam </li>
+        <li>Masak sampai matang lalu beri gula dan garam, bila rasa sudah pas sajikan dengan nasi panas, plecing kangkung,</li>
+        </ul>
       </article>
 
       <article>
-        <p>Rekomendasi Masakan yang Lain</p>
-        <p>Olahan Masakan dari Kota Bandung</p>
-        <ul>
+        <p class="rekomendasi">Rekomendasi Masakan yang Lain</p>
+        <p class="value-rekomen">Olahan Masakan dari Kota Bandung</p>
+        <ul class="rekomen">
             <li><a href="#">Seblak Basah Khas Bandung</a></li>
             <li><a href="#">Nasi Goreng Cikur Khas Bandung</a></li>
             <li><a href="#">Sekoteng Panas Khas Bandung</a></li>
         </ul>
-        <p>Olahan Masakan dari Kota Sumedang</p>
-        <ul>
+        <p class="value-rekomen">Olahan Masakan dari Kota Sumedang</p>
+        <ul class="rekomen">
             <li><a href="#">Nasi Timbel Sambal Dadak khas Sumedang (Sunda)</a></li>
             <li><a href="#">Tahu Sumedang Krispi</a></li>
             <li><a href="#">Tahu Sumedang Masak Kuah - Ca Sawi Putih Telur</a></li>
