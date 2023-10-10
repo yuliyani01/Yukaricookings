@@ -31,6 +31,7 @@ header {
 }
 
 header.navbar-container {
+  position: sticky;
   max-width: 1200px;
   width: 100%;
   margin-inline: auto;
@@ -40,6 +41,12 @@ header.navbar-container {
     
   padding-block: 1rem;
   z-index: 999;
+  
+}
+
+.logo img {
+  width: 350px;
+  height: auto;
 }
 
 header.navbar-container .nav-list li{
@@ -66,15 +73,28 @@ main {
 }
 
 .content {
-  padding: 2rem 4rem;
+  padding: 2rem;
   flex: 1;
-  gap : 2rem;
+  gap : 4rem;
   display: flex;
+  margin-bottom: 2rem;
+}
+
+.content-image{
+  width: 30%;
+}
+
+.content-image img {
+  height: 188px;
+  display: block;
+  margin-inline: auto;
 }
 
 .opening {
   font-family: Kalam;
   font-weight: 300;
+  font-size: 24px;
+  text-align: center;
 }
 
 main .content {
@@ -83,9 +103,93 @@ main .content {
   align-items: center;
 }
 
-main .content .carousel {
-  flex: 1 1;
-  margin-block: 1rem;
+.content-slide {
+  position: relative;
+  margin: auto;
+}
+
+.page {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.page .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  border-radius: 50%;
+}
+
+.page .active,
+.page .dot:hover {
+  background-color: #ce0000;
+}
+
+.imgslide img{
+  display: flex;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-left: 0%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  color: rgb(255, 254, 224);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.8); 
+  opacity: 50%;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(0, 0, 0);
+}
+
+.text {
+  color: white;
+  font-size: 24px;
+  padding: 20px 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  background-position: top;
+}
+
+.slider {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .resep {
@@ -96,9 +200,10 @@ main .content .carousel {
 }
 
 .resep-atas-kanan img {
-  height: 281px;
+  max-height: 281px;
   width: 281px;
   padding-bottom: 1rem;
+  object-fit: cover;
 }
 
 .resep .koki-resep img {
@@ -126,6 +231,11 @@ h4 {
 
 .resep-bawah {
   padding-bottom: 2rem;
+}
+
+.isi-resep {
+  padding: 2rem;
+  text-align: left;
 }
 
 .judul {
@@ -168,11 +278,127 @@ p {
 
 footer {
   background-color: #FF4D00;
-  padding-top: 5rem;
   justify-self: center;
   color: white;
   margin-top: 2rem;
+  text-align: center;
+  padding: 1rem 3rem;
+  max-width: 1200px;
+  display: block;
+  margin-inline: auto;
 }
+
+/* resposive */
+
+@media screen and (max-width: 1200px){
+  .content {
+    flex-flow: column;
+    text-align: center;
+    margin: 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-flow: column wrap;
+  }
+  nav ul {
+    justify-content: center;
+    
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .content-slide {
+      padding: 8px 50px 12px 50px;
+  }
+
+  .next .prev {
+      right: 50px;
+      border-radius: 3px 0 0 3px;
+  }
+
+  .imgslide img {
+    max-height: 200px;
+  }
+
+  .text {
+  font-size: 18px;
+  padding: 10px 6px;
+  width: 80%;
+  margin: 2px;
+  }
+
+  .prev .next {
+    padding: 8px;
+    font-size: 9px;
+  }
+
+  .resep {
+    flex-flow: column;
+    text-align: center;
+  }
+
+  h4 {
+    width: 30%;
+    text-align: center;
+  }
+
+  .koki-resep {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .text {
+    font-size: 10px;
+    padding: 7px 5px;
+    width: 70%;
+    }
+
+    .koki-resep {
+      display: none;
+    }
+
+    .imgslide img {
+      width: 250px;
+    }
+
+    .content-image {
+      width: 100%;
+    }
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+      opacity: .4;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+      opacity: .4;
+  }    
+  to {
+      opacity: 1;
+  }
+}
+
+
+
 
 
 

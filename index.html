@@ -19,10 +19,10 @@
 
       <nav class="nav-list">
         <ul>
-          <li><a href="#">Khas Sunda</a></li>
-          <li><a href="#">Khas Jawa</a></li>
-          <li><a href="#">Khas Aceh</a></li>
-          <li><a href="#">Khas Bali</a></li>
+          <li><a href="#Khas Sunda">Khas Sunda</a></li>    
+          <li><a href="#Khas Jawa">Khas Jawa</a></li>
+          <li><a href="#Khas Aceh">Khas Aceh</a></li>
+          <li><a href="#Khas Bali">Khas Bali</a></li>
         </ul>
       </nav>
     </header>
@@ -30,30 +30,54 @@
     <main>
       <div class="content">
         
-        <div class="carousel">
-          <!-- bikin slider/carousel-->
-          <img src="img/nasi liwet.jpg" alt="Nasi Liwet">
-          <p>Resep Nasi Liwet Magic Com Anti Gagal</p>
+        <div class="slider">
+          <div class="content-slide">
+            <div class="imgslide fade">
+                <img src="img/nasi liwet.jpg" alt="Nasi Liwet">
+                <div class="text">Resep Nasi Liwet Magic Com Anti Gagal</div>
+            </div>
+
+            <div class="imgslide fade">
+                <img src="img/rawon.jpg" alt="Rawon">
+                <div class="text">Resep Rawon Daging Sapi Khas Jawa Timur Spesial Enak Empuk</div>
+            </div>
+
+            <div class="imgslide fade">
+                <img src="img/mi aceh.jpg" alt="Mi Aceh">
+                <div class="text">Resep Mie Aceh Goreng, Sang Juara dari Ujung Sumatra</div>
+            </div>
+
+            <a class="prev" onClick="nextslide(-1)">&#10094;</a>
+            <a class="next" onClick="nextslide(1)">&#10095;</a> 
+          </div>
+
+          <div class="page">
+              <span class="dot" onClick="dotslide(1)"></span>
+              <span class="dot" onClick="dotslide(2)"></span>
+              <span class="dot" onClick="dotslide(3)"></span>
+          </div>
         </div>
 
-        <div class="content-image">
-            <h1>Berbagai Resep Makanan Khas Daerah</h1>
-            <img src="img/coki.png" alt="Gambar Cooki">
-            <p class="opening">Selamat datang di blog saya yang merupakan kumpulan resep makanan khas daerah yang kamu disukai.</p>
-        </div>      
+        <aside class="content-image">
+          <h1>Berbagai Resep Makanan Khas Daerah</h1>
+          <p>Dibuat oleh</p>
+          <img src="img/foto.jpeg" alt="foto identitas"> 
+          <p class="opening">Selamat datang di blog saya yang merupakan kumpulan resep makanan khas daerah yang kamu disukai.</p>
+        </aside>  
 
       </div>
 
-      <!-- bikin garis -->
+      <hr style="height: 2px; border-width: 2px; margin-bottom: 2rem; color: #FF4D00;">
 
+      <div>
       <article>
-        <h4>Khas Sunda</h4>
+        <h4 id="Khas Sunda">Khas Sunda</h4>
         <div class="resep">
           <div class="resep-atas-kanan">
             <img src="img/nasi liwet.jpg" alt="nasi liwet">
           </div>
           
-          <div>
+          <div class="isi-resep">
             <p class="judul">Resep Nasi Liwet Magic Com Anti Gagal</p>
             <p class="main-list">Bahan-bahan : </p>
           <ul class="list-bahan">
@@ -69,7 +93,7 @@
           </div>
         </div>
 
-        <div class="resep-bawah">
+        <div class="resep-bawah isi-resep">
           <ul class="list-bahan">
             <li>Daun jeruk 3 lembar, buang tulangnya</li>
             <li>Garam 1 sendok teh (saya pakai 1/2 sendok teh garam dan diberi kaldu bubuk secukupnya biar makin gurih)</li>
@@ -87,17 +111,17 @@
             <li>Setelah nasi matang dan tanak, masukkan teri, cabai rawit, pete, bawang dan baby cumi. Aduk rata dengan nasi. </li>
             <li>Nasi liwet sunda siap disajikan bersama sambal pedas dan pelengkap pilihan sesuai selera.</p>
           </ul>
-
+        </div>
       </article>
 
       <article>
-        <h4>Khas Jawa</h4>
+        <h4 id="Khas Jawa">Khas Jawa</h4>
         <div class="resep">
           <div class="resep-atas-kanan">
             <img src="img/rawon.jpg" alt="Rawon">
           </div>
 
-          <div>
+          <div class="isi-resep">
             <p class="judul">Resep Rawon Daging Sapi Khas Jawa Timur Spesial Enak Empuk</p>
             <p class="main-list">Bahan-bahan </p>
             <ul class="list-bahan">
@@ -112,7 +136,7 @@
         </div>
         
         <div class="resep">
-          <div>
+          <div class="isi-resep">
             <ul class="list-bahan">
               <li>Gula pasir sejumput saja</li>
               <li>Penyedap jamur secukupnya </li>
@@ -149,6 +173,8 @@
           </div>
           
         </div>
+
+        <div class="isi-resep">
         <p class="main-list">Langkah-langkah</p>
         <ul class="list-bahan resep-bawah">
           <li>Cuci daging, rebus dengan air secukupnya hingga setengah empuk lalu potong-potong dadu, sisakan 1,5 liter atau sesuai selera air kaldu bekas rebusan daging yang digunakan untuk kuah.</li>
@@ -158,16 +184,17 @@
           <li>Masukkan daun bawang merah iris, aduk rata, matikan apinya.</li>
           <li>Sajikan rawon selagi hangat bersama nasi putih lengkap dengan bahan pelengkapnya. Endeus!</li>
         </ul>
+        </div>
       </article>
 
       <article>
-        <h4>Khas Aceh</h4>
+        <h4 id="Khas Aceh">Khas Aceh</h4>
         <div class="resep">
           <div class="resep-atas-kanan">
             <img src="img/mi aceh.jpg" alt="Mi Aceh">
           </div>
 
-          <div>
+          <div class="isi-resep">
             <p class="judul">Resep Mie Aceh Goreng, Sang Juara dari Ujung Sumatra</p>
             <p class="main-list">Bahan utama</p>
             <ul class="list-bahan">
@@ -183,7 +210,7 @@
         </div>
 
         <div class="resep">
-          <div>
+          <div class="isi-resep">
             <ul class="list-bahan">
               <li>50 g taoge</li>
               <li>2 sdm Bango Kecap Manis</li>
@@ -222,13 +249,13 @@
       </article>
 
       <article>
-        <h4>Khas Bali</h4>
+        <h4 id="Khas Bali">Khas Bali</h4>
         <div class="resep">
           <div class="resep-atas-kanan">
             <img src="img/ayam betutu.jpg" alt="Ayam Betutu">
           </div>
 
-          <div>
+          <div class="isi-resep">
             <p>Resep Ayam Betutu Gilimanuk yang Pedas Gurih Berempah</p>
             <p>Bahan-bahan</p>
             <ul>
@@ -245,7 +272,7 @@
           </div>
         </div>
 
-        <div class="resep-bawah">
+        <div class="resep-bawah isi-resep">
           <p>Bumbu rajang halus :</p>
           <ul class="list-bahan">
             <li>10 bawang merah</p>
@@ -268,7 +295,7 @@
         <p class="rekomendasi">Rekomendasi Masakan yang Lain</p>
         <div class="resep">
           <div>
-            <p class="sub-rekomen">Olahan Masakan dari Kota Bandung</p>
+            <p id="Kota Bandung" class="sub-rekomen">Olahan Masakan dari Kota Bandung</p>
             <ul class="value-rekomen">
               <li><a href="#">Seblak Basah Khas Bandung</a></li>
               <li><a href="#">Nasi Goreng Cikur Khas Bandung</a></li>
@@ -277,7 +304,7 @@
           </div>
 
           <div>
-            <p class="sub-rekomen">Olahan Masakan dari Kota Sumedang</p>
+            <p id="Kota Sumedang" class="sub-rekomen">Olahan Masakan dari Kota Sumedang</p>
             <ul class="value-rekomen">
               <li><a href="#">Nasi Timbel Sambal Dadak khas Sumedang (Sunda)</a></li>
               <li><a href="#">Tahu Sumedang Krispi</a></li>
@@ -287,10 +314,14 @@
         </div>
       </article>
 
+      </div>
+
+    </main>
+
       <footer>
         <p>&copy 2023 yukaricookings</p>
       </footer>
-    </main>
 
+    <script src="js/style.js"></script>
   </body>
 </html>
